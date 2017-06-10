@@ -29,11 +29,15 @@
   "Holberton School coding style syntax checker for C code
 
 More info and install instructions: https://github.com/holbertonschool/Betty"
+  ;; Use "no-summary" flag to optimize the output to be parsed
   :command ("betty-style" "--no-summary" source)
+  ;; Parse the output of the betty-style command
   :error-patterns
   ((error line-start (file-name) ":" line ": ERROR: " (message) line-end)
   (warning line-start (file-name) ":" line ": WARNING: " (message) line-end))
+  ;; Enable the checker for C mode
   :modes c-mode
+  ;; Call the 'gcc' as the next checker 
   :next-checkers ((warning . c/c++-gcc)))
 
 (provide 'betty-style)
