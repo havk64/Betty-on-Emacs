@@ -5,6 +5,12 @@ Emacs extension, providing C style syntax checking On the Fly.
 
 More information on: [Betty repository](https://github.com/holbertonschool/Betty)
 
+## Requirements:
+
+- [Betty executable](https://github.com/holbertonschool/Betty)
+- Emacs 24.3+ (for [Flycheck](http://www.flycheck.org/en/latest/))
+- [Flycheck](http://www.flycheck.org/en/latest/user/installation.html)
+
 ## Install instructions
 
 Besides [Betty executable](https://github.com/holbertonschool/Betty) the only requirement to install Betty-Style as syntax  
