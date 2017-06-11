@@ -7,8 +7,8 @@ More info on Betty here: [Betty C Style Checker](https://github.com/holbertonsch
 
 ## Install instructions
 
-The only requirement to install Betty-Style as syntax checker on Emacs is the  
-package [Flycheck](http://www.flycheck.org/en/latest/) which is available through [MELPA](c).  
+Besides [Betty executable](https://github.com/holbertonschool/Betty) the only requirement to install Betty-Style as syntax  
+checker on Emacs is the package [Flycheck](http://www.flycheck.org/en/latest/) which is available through [MELPA](c).  
 If not already installed on your system follow the [Installation instructions](http://www.flycheck.org/en/latest/user/installation.html)  
 that consists basically of the addition 3 lines of lisp code to your `.emacs`  
 config file.
