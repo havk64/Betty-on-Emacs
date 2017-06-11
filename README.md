@@ -53,11 +53,15 @@ More information [here](http://www.flycheck.org/en/latest/languages.html)
 
 - The `gcc` flycheck checker by default checks for the `-Wall` and `-Wextra` flags  
 by means of the variable `flycheck-gcc-warnings` which should have the value:  
-`("all" "extra")`.
+`("all" "extra")`.  
 You can also add the flag pedantic by customizing the variable  
-`flycheck-gcc-pedantic` to `true` like this:
+`flycheck-gcc-pedantic` to `true` and add the flag `-Werror` to the list  
+like this:
 
         (setq flycheck-gcc-pedantic t)
+		(setq flycheck-gcc-warnings '("all" "extra" "error"))
+
+	 to have the flags `-Wall -Werror -Wextra -pedantic` checked on the fly.
 
     *Note*: to check the value of a variable on Emacs execute:
 
