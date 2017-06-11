@@ -37,3 +37,8 @@ Emacs config:
 	
 The first line loads the byte-compiled version of the lisp source code and the  
 second add `betty-style` to the list of available `flycheck-checkers`.
+
+## Usage
+
+For a brief introduction into Flycheck and overview of most important features  
+check the [Quickstart](Flycheck usage) page.
