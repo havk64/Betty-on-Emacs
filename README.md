@@ -21,22 +21,29 @@ If not already installed on your system follow the [Installation instructions](h
 that consists basically of the addition 3 lines of lisp code to your `.emacs`  
 config file.
 
-The script `install.sh` uses [GNU Stow](https://www.gnu.org/software/stow/) which is a tool for managing the  
-installation of multiple software packages in the same run-time directory tree,  
-thus, a reliable and secure tool to manage dotfiles too.
+ 1. Clone this repo somewhere in your system and run the `install.sh` script:
 
-Running the `install.sh` script will create symlinks in the `~/.emacs.d`  
-directory pointing to the files in this repo. Hence you don't need to copy or  
-update them locally/manually if they get updated.
+        $ git clone git@github.com:havk64/Betty-on-Emacs.git
 
-Once the file/symlinks are in place you just need to add this two lines to your  
-Emacs config:
+	    $ cd Betty-on-Emacs
 
-    (load "~/.emacs.d/private/Betty/betty-style")
-    (add-to-list 'flycheck-checkers 'betty-style)
+	    $ ./install.sh
+
+    The script `install.sh` uses [GNU Stow](https://www.gnu.org/software/stow/) which is a tool for managing the  
+    installation of multiple software packages in the same run-time directory tree,  
+    thus, a reliable and secure tool to manage dotfiles too.
+
+    Running the `install.sh` script will create symlinks in the `~/.emacs.d`  
+    directory pointing to the files in this repo. Hence you don't need to copy or  
+    update them locally/manually if they get updated.
+
+2. Add this two lines to your Emacs config file `~/.emacs`:
+
+        (load "~/.emacs.d/private/Betty/betty-style")
+        (add-to-list 'flycheck-checkers 'betty-style)
 	
-The first line loads the byte-compiled version of the lisp source code and the  
-second add `betty-style` to the list of available `flycheck-checkers`.
+    The first line loads the byte-compiled version of the lisp source code and the  
+    second add `betty-style` to the list of available `flycheck-checkers` enabling it.
 
 ## Usage
 
