@@ -9,3 +9,5 @@ which stow && echo "Stow found at $(which stow)" || sudo apt-get -y install stow
 
 stow betty -t $target -vvv
 
+echo "All set!"
+exit
