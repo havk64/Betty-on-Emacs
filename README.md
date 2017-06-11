@@ -23,7 +23,7 @@ config file.
 
 The script `install.sh` uses [GNU Stow](https://www.gnu.org/software/stow/) which is a tool for managing the  
 installation of multiple software packages in the same run-time directory tree,  
-thus, a reliable and secure tool to manage packages or dotfiles.
+thus, a reliable and secure tool to manage dotfiles too.
 
 Running the `install.sh` script will create symlinks in the `~/.emacs.d`  
 directory pointing to the files in this repo. Hence you don't need to copy or  
