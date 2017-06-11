@@ -5,6 +5,8 @@ Emacs extension, providing C style syntax checking On the Fly.
 
 More information on: [Betty repository](https://github.com/holbertonschool/Betty)
 
+![betty-style as emacs syntax checker](img/betty.png?raw-true)
+
 ## Requirements:
 
 - [Betty executable](https://github.com/holbertonschool/Betty)
