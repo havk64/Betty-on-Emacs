@@ -4,8 +4,23 @@
 
 target=~/
 
+# Check for Operating system to install Stow
+install_stow() {
+    case "$(uname -s)" in
+        Darwin)
+            brew install stow
+            ;;
+        Linux)
+            sudo apt-get install -y stow
+            ;;
+        *)
+            echo 'OS not supported yet'
+            ;;
+    esac
+}
+
 # Installs GNU Stow if not installed(just 200kb)
-which stow && echo "Stow found at $(which stow)" || sudo apt-get -y install stow
+which stow && echo "Stow found at $(which stow)" || install_stow
 
 stow betty -t $target -vvv
 
