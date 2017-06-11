@@ -12,6 +12,7 @@ More information on: [Betty repository](https://github.com/holbertonschool/Betty
 - [Betty executable](https://github.com/holbertonschool/Betty)
 - Emacs 24.3+ (for [Flycheck](http://www.flycheck.org/en/latest/))
 - [Flycheck](http://www.flycheck.org/en/latest/user/installation.html)
+- Linux or OsX (for the install script)
 
 ## Install instructions
 
