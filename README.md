@@ -29,21 +29,21 @@ config file.
 
 	    $ ./install.sh
 
-> The script `install.sh` uses [GNU Stow](https://www.gnu.org/software/stow/) which is a tool for managing the  
-installation of multiple software packages in the same run-time directory tree,  
-thus, a reliable and secure tool to manage dotfiles too.
+    The script `install.sh` uses [GNU Stow](https://www.gnu.org/software/stow/) which is a tool for managing the  
+    installation of multiple software packages in the same run-time directory tree,  
+    thus, a reliable and secure tool to manage dotfiles too.
 
-> Running the `install.sh` script will create symlinks in the `~/.emacs.d`  
-directory pointing to the files in this repo. Hence you don't need to copy or  
-update them locally/manually if they get updated.
+    Running the `install.sh` script will create symlinks in the `~/.emacs.d`  
+    directory pointing to the files in this repo. Hence you don't need to copy or  
+    update them locally/manually if they get updated.
 
 2. Add this two lines to your Emacs config file `~/.emacs`:
 
         (load "~/.emacs.d/private/Betty/betty-style")
         (add-to-list 'flycheck-checkers 'betty-style)
 	
-> The first line loads the byte-compiled version of the lisp source code and the  
-second add `betty-style` to the list of available `flycheck-checkers` enabling it.
+    The first line loads the byte-compiled version of the lisp source code and the  
+    second add `betty-style` to the list of available `flycheck-checkers` enabling it.
 
 ## Usage
 
