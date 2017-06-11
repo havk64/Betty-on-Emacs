@@ -21,13 +21,13 @@ If not already installed on your system follow the [Installation instructions](h
 that consists basically of the addition 3 lines of lisp code to your `.emacs`  
 config file.
 
- 1. Clone this repo somewhere in your system and run the `install.sh script`:
+ 1. Clone this repo somewhere in your system and run the `install.sh` script:
 
-    $ git clone git@github.com:havk64/Betty-on-Emacs.git
+        $ git clone git@github.com:havk64/Betty-on-Emacs.git
 
-	$ cd Betty-on-Emacs
+	    $ cd Betty-on-Emacs
 
-	$ ./install.sh
+	    $ ./install.sh
 
 > The script `install.sh` uses [GNU Stow](https://www.gnu.org/software/stow/) which is a tool for managing the  
 installation of multiple software packages in the same run-time directory tree,  
@@ -39,8 +39,8 @@ update them locally/manually if they get updated.
 
 2. Add this two lines to your Emacs config file `~/.emacs`:
 
-    (load "~/.emacs.d/private/Betty/betty-style")
-    (add-to-list 'flycheck-checkers 'betty-style)
+        (load "~/.emacs.d/private/Betty/betty-style")
+        (add-to-list 'flycheck-checkers 'betty-style)
 	
 > The first line loads the byte-compiled version of the lisp source code and the  
 second add `betty-style` to the list of available `flycheck-checkers` enabling it.
