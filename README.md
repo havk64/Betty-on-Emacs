@@ -65,7 +65,7 @@ like this:
 - **ShellCheck**:  
 Flycheck by default provide syntax check for shell scripts via [Shellcheck](https://github.com/koalaman/shellcheck)  
 and more than 40 different programming languages  
-To enable Shellcheck or any of the other 41 syntax checkers(linters) you just  
+To enable Shellcheck or any of the other syntax checkers(linters) you just  
 need to install the respective executable system-wide.  
 More information [here](http://www.flycheck.org/en/latest/languages.html)
 
