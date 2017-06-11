@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Uses GNU Stow to install the files in the proper folder allowing easy
 # install(stow) and uninstall(unstow) of symlinks to this source controlled repo
+# shellcheck disable=SC2015
 
 target=~/
 
