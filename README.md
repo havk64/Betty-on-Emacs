@@ -45,13 +45,8 @@ check the [Quickstart](http://www.flycheck.org/en/latest/user/quickstart.html) p
 
 ## Other features
 
-- Flycheck by default provide syntax check for shell scripts via [Shellcheck](https://github.com/koalaman/shellcheck)  
-and more than 40 different programming languages  
-To enable Shellcheck or any of the other 41 syntax checkers(linters) you just  
-need to install the respective executable system-wide.  
-More information [here](http://www.flycheck.org/en/latest/languages.html)
-
-- The `gcc` flycheck checker by default checks for the `-Wall` and `-Wextra` flags  
+- CFLAGS:  
+The `gcc` flycheck checker by default checks for the `-Wall` and `-Wextra` flags  
 by means of the variable `flycheck-gcc-warnings` which should have the value:  
 `("all" "extra")`.  
 You can also add the flag pedantic by customizing the variable  
@@ -66,3 +61,11 @@ like this:
     *Note*: to check the value of a variable on Emacs execute:
 
 	<kbd>Ctrl-h v</kbd> name-of-variable <kbd>RET</kbd>
+
+- ShellCheck:  
+Flycheck by default provide syntax check for shell scripts via [Shellcheck](https://github.com/koalaman/shellcheck)  
+and more than 40 different programming languages  
+To enable Shellcheck or any of the other 41 syntax checkers(linters) you just  
+need to install the respective executable system-wide.  
+More information [here](http://www.flycheck.org/en/latest/languages.html)
+
