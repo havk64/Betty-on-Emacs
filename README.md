@@ -43,9 +43,9 @@ second add `betty-style` to the list of available `flycheck-checkers`.
 For a brief introduction into Flycheck and overview of most important features  
 check the [Quickstart](http://www.flycheck.org/en/latest/user/quickstart.html) page.
 
-## Other features
+## Bonus features
 
-- CFLAGS:  
+- **CFLAGS**:  
 The `gcc` flycheck checker by default checks for the `-Wall` and `-Wextra` flags  
 by means of the variable `flycheck-gcc-warnings` which should have the value:  
 `("all" "extra")`.  
@@ -62,7 +62,7 @@ like this:
 
 	<kbd>Ctrl-h v</kbd> name-of-variable <kbd>RET</kbd>
 
-- ShellCheck:  
+- **ShellCheck**:  
 Flycheck by default provide syntax check for shell scripts via [Shellcheck](https://github.com/koalaman/shellcheck)  
 and more than 40 different programming languages  
 To enable Shellcheck or any of the other 41 syntax checkers(linters) you just  
