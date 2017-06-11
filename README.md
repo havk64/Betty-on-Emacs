@@ -41,4 +41,4 @@ second add `betty-style` to the list of available `flycheck-checkers`.
 ## Usage
 
 For a brief introduction into Flycheck and overview of most important features  
-check the [Quickstart](Flycheck usage) page.
+check the [Quickstart](http://www.flycheck.org/en/latest/user/quickstart.html) page.
