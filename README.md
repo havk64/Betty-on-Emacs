@@ -16,8 +16,7 @@ More information on: [Betty repository](https://github.com/holbertonschool/Betty
 
 ## Install instructions
 
-Besides [Betty executable](https://github.com/holbertonschool/Betty) the only requirement to install Betty-Style as syntax  
-checker on Emacs is the package [Flycheck](http://www.flycheck.org/en/latest/) which is available through [MELPA](c).  
+[Flycheck](http://www.flycheck.org/en/latest/) is available through [MELPA](c) the Emacs Lisp Package Archive.  
 If not already installed on your system follow the [Installation instructions](http://www.flycheck.org/en/latest/user/installation.html)  
 that consists basically of the addition 3 lines of lisp code to your `.emacs`  
 config file.
