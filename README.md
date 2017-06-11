@@ -27,5 +27,5 @@ Emacs config:
     (load "~/.emacs.d/private/Betty/betty-style")
     (add-to-list 'flycheck-checkers 'betty-style)
 	
-The first line loads the byte-compiled version of the lisp code and the second  
-add `betty-style` to the list of available `flycheck-checkers`.
+The first line loads the byte-compiled version of the lisp source code and the  
+second add `betty-style` to the list of available `flycheck-checkers`.
