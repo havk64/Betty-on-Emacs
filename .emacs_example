@@ -1,3 +1,7 @@
+;; Set variables to allow emacs use alternative home directory
+(setq user-init-file (or load-file-name (buffer-file-name)))
+(setq user-emacs-directory (file-name-directory user-init-file))
+
 ;; Install Flychecker from MELPA stable
 (require 'package)
 (add-to-list 'package-archives
