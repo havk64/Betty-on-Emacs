@@ -1,3 +1,10 @@
+;;; .emacs_example --- Emacs init example -*- mode: emacs-lisp -*-
+
+;;; Commentary:
+;;  Betty C style checker - evaluation
+
+;;; Code:
+
 ;; Set variables to allow emacs use alternative home directory
 (setq user-init-file (or load-file-name (buffer-file-name)))
 (setq user-emacs-directory (file-name-directory user-init-file))
