@@ -23,7 +23,9 @@
 	      indent-tabs-mode t)))
 
 ;; Load betty-style C syntax checker and add it to Flycheck checkers list
-(load "~/.emacs.d/private/local/betty-style")
+(load
+ (concat
+  (file-name-directory user-emacs-directory) "betty/.emacs.d/private/Betty/betty-style"))
 (add-to-list 'flycheck-checkers 'betty-style)
 
 ;; Enable -Wall -Werror -Extra -pedantic gcc flags
