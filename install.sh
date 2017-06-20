@@ -4,7 +4,6 @@
 # shellcheck disable=SC2015
 
 target=~/
-
 script_dir="$(pwd)/$(dirname $BASH_SOURCE)"
 
 # Check for Operating system to install Stow
