@@ -5,7 +5,7 @@
 
 # The variable stow_dir allow this script to be called from other directories
 target=~/
-stow_dir="$(pwd)/$(dirname $BASH_SOURCE)"
+stow_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Check for Operating system to install Stow
 install_stow() {
