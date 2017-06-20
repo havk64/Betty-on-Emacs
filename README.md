@@ -14,6 +14,15 @@ More information on: [Betty repository](https://github.com/holbertonschool/Betty
 - [Flycheck](http://www.flycheck.org/en/latest/user/installation.html)
 - Linux or OsX (for the install script)
 
+## Try it before permanent install
+
+Clone this repository, `cd` to to `Betty-On-Emacs` directory and run the script `try_it_first.sh`  
+That's it!
+This script run an instance of Emacs in an isolated environment using this repo as the Emacs home
+directory and loads the configuration from the [.emacs](.emacs) config file where 
+everything is already set for you. ;-)
+You can indeed use this `.emacs` file as reference to implement your own configuration.
+
 ## Install instructions
 
 [Flycheck](http://www.flycheck.org/en/latest/) is available through [MELPA](c) the Emacs Lisp Package Archive.  
