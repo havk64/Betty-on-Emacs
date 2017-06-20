@@ -5,7 +5,7 @@
 
 target=~/
 
-curr_dir="$(pwd)/$(dirname $BASH_SOURCE)"
+script_dir="$(pwd)/$(dirname $BASH_SOURCE)"
 
 # Check for Operating system to install Stow
 install_stow() {
@@ -25,7 +25,7 @@ install_stow() {
 # Installs GNU Stow if not installed(just 200kb)
 which stow && echo "Stow found at $(which stow)" || install_stow
 
-stow -d "$curr_dir" -t $target -S betty -vvv
+stow -d "$script_dir" -t $target -S betty -vvv
 
 echo "All set!"
 exit
