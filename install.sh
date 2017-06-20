@@ -25,7 +25,7 @@ install_stow() {
 # Installs GNU Stow if not installed(just 200kb)
 which stow && echo "Stow found at $(which stow)" || install_stow
 
-stow -d "$curr_dir" -n -t $target -S betty -vvv
+stow -d "$curr_dir" -t $target -S betty -vvv
 
 echo "All set!"
 exit
