@@ -3,4 +3,6 @@
 # the config file of your ~/ home directory, your personal configuration.
 # Thus you can try this configuration without affect your current settings.
 
-emacs -q -l .emacs dir_try_it_first/test.c
+emacs_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+emacs -q -l "$emacs_dir"/.emacs test/test.c
