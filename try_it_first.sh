@@ -4,4 +4,3 @@
 # Thus you can try this configuration without affect your current settings.
 
 emacs -q -l .emacs dir_try_it_first/test.c & disown
-
