@@ -54,5 +54,5 @@
  ;; If there is more than one, they won't work right.
  )
 
-(provide '.emacs_exampe)
+(provide '.emacs_example)
 ;;; .emacs_example ends here
