@@ -54,5 +54,10 @@
  ;; If there is more than one, they won't work right.
  )
 
-(provide '.emacs_exampe)
+;; inhibit the start message
+(setq inhibit-startup-message t)
+;; delete other windows
+(delete-other-windows)
+
+(provide '.emacs_example)
 ;;; .emacs_example ends here
