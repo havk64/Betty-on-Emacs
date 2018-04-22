@@ -1,0 +1,3 @@
+[submodule "betty/.emacs.d/themes/emacs"]
+	path = betty/.emacs.d/themes/emacs
+	url = https://github.com/dracula/emacs.git
