@@ -5,10 +5,6 @@
 
 ;;; Code:
 
-;; Set variables to allow emacs use alternative home directory
-(setq user-init-file (or load-file-name (buffer-file-name)))
-(setq user-emacs-directory (file-name-directory user-init-file))
-
 ;; Install Flychecker from MELPA stable
 (require 'package)
 (add-to-list 'package-archives
@@ -33,7 +29,7 @@
 ;; and add it to the Flycheck checkers list
 (load
  (concat
-  (file-name-directory user-emacs-directory) ".emacs.d/private/Betty/betty-style"))
+  (file-name-directory user-emacs-directory) "private/Betty/betty-style"))
 (add-to-list 'flycheck-checkers 'betty-style)
 
 ;; Enable -Wall -Werror -Extra -pedantic gcc flags
